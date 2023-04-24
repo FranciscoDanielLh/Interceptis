@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */; };
+		3FA281D129F73FB2008B8B31 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D029F73FB2008B8B31 /* DocumentsView.swift */; };
+		3FA281D329F73FD3008B8B31 /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D229F73FD3008B8B31 /* ForumView.swift */; };
+		3FA281D529F73FE6008B8B31 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D429F73FE6008B8B31 /* HomeView.swift */; };
 		FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63129F70ED000C641A7 /* hackathonApp.swift */; };
 		FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63329F70ED000C641A7 /* ContentView.swift */; };
 		FFF2B63629F70ED100C641A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2B63529F70ED100C641A7 /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNavBar.swift; sourceTree = "<group>"; };
+		3FA281D029F73FB2008B8B31 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		3FA281D229F73FD3008B8B31 /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
+		3FA281D429F73FE6008B8B31 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FFF2B62E29F70ED000C641A7 /* hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2B63129F70ED000C641A7 /* hackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathonApp.swift; sourceTree = "<group>"; };
 		FFF2B63329F70ED000C641A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,9 @@
 		FFF2B63029F70ED000C641A7 /* hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				3FA281D429F73FE6008B8B31 /* HomeView.swift */,
+				3FA281D229F73FD3008B8B31 /* ForumView.swift */,
+				3FA281D029F73FB2008B8B31 /* DocumentsView.swift */,
 				3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */,
 				FFF2B63129F70ED000C641A7 /* hackathonApp.swift */,
 				FFF2B63329F70ED000C641A7 /* ContentView.swift */,
@@ -157,7 +166,10 @@
 				3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */,
 				FFF2B64329F7241700C641A7 /* OpenAIConnector.swift in Sources */,
 				FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */,
+				3FA281D129F73FB2008B8B31 /* DocumentsView.swift in Sources */,
 				FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */,
+				3FA281D529F73FE6008B8B31 /* HomeView.swift in Sources */,
+				3FA281D329F73FD3008B8B31 /* ForumView.swift in Sources */,
 				FFF2B64529F724F700C641A7 /* OpenAIResponseHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
