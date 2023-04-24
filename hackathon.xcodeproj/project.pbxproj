@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */; };
 		FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63129F70ED000C641A7 /* hackathonApp.swift */; };
 		FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63329F70ED000C641A7 /* ContentView.swift */; };
 		FFF2B63629F70ED100C641A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2B63529F70ED100C641A7 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNavBar.swift; sourceTree = "<group>"; };
 		FFF2B62E29F70ED000C641A7 /* hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2B63129F70ED000C641A7 /* hackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathonApp.swift; sourceTree = "<group>"; };
 		FFF2B63329F70ED000C641A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 		FFF2B63029F70ED000C641A7 /* hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */,
 				FFF2B63129F70ED000C641A7 /* hackathonApp.swift */,
 				FFF2B63329F70ED000C641A7 /* ContentView.swift */,
 				FFF2B63529F70ED100C641A7 /* Assets.xcassets */,
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */,
 				FFF2B64329F7241700C641A7 /* OpenAIConnector.swift in Sources */,
 				FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */,
 				FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */,
