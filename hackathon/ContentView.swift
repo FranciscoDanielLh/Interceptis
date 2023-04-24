@@ -3,25 +3,24 @@ import SwiftUI
 
 
 struct ContentView: View {
-    var authToken:String = "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"
     
-    @State private var search:String = ""
+    @State private var prompt_f:String = ""
     let openAI = OpenAIConnector()
     
-    private func performOpenAISearch() async {
-        
-        openAI.processPrompt(prompt: "Hola! ¿sabes sobre la constitucion mexicana?")
+    private func performOpenAISearch(prompt_f:String) async {
+        openAI.processPrompt(prompt_f: prompt_f)
+       
         
     }
     
     var body: some View {
         NavigationView{
             VStack{
-                TextField("Escribe", text: $search)
+                TextField("Escribe", text: $prompt_f)
                     .onSubmit {
-                        if !search.isEmpty{
+                        if !prompt_f.isEmpty{
                             Task {
-                                await performOpenAISearch()
+                            await performOpenAISearch(prompt_f: prompt_f)
 
                             }
                         }

@@ -4,7 +4,7 @@ public class OpenAIConnector {
 
     let openAIURL = URL(string: "https://api.openai.com/v1/chat/completions")
     var openAIKey: String {
-        return "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"
+        return "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"
     }
     
     /// DO NOT EVER TOUCH THIS FUNCTION. EVER.
@@ -37,15 +37,16 @@ public class OpenAIConnector {
         return requestData
     }
     
-    public func processPrompt(prompt: String) -> Optional<String> {
+    public func processPrompt(prompt_f: String) -> Optional<String> {
         /// cURL stuff.
         var request = URLRequest(url: self.openAIURL!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("Bearer \(self.openAIKey)", forHTTPHeaderField: "Authorization")
+        var complete_prompt:String = "Actua como un abogado experto en la contitución Méxicana, especialmente haciendo enfasis en las leyes de la ciudad de México. Por favor, asesorame " + prompt_f
         
-        let httpBody: Dictionary <String, Any> = [ "model": "gpt-3.5-turbo",
-                                                      "messages": [["role": "user", "content": "¡Hola! Me acaban de robar mi coche, según la contitutción mexicana, ¿cómo puedo reportarlo?"]]]
+        let httpBody: Dictionary <String, Any> = [ "model": "gpt-3.5-turbo-0301",
+                                                      "messages": [["role": "user", "content":complete_prompt]]]
         
         var httpBodyJson: Data
         
