@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */; };
+		3FA281D129F73FB2008B8B31 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D029F73FB2008B8B31 /* DocumentsView.swift */; };
+		3FA281D329F73FD3008B8B31 /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D229F73FD3008B8B31 /* ForumView.swift */; };
+		3FA281D529F73FE6008B8B31 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D429F73FE6008B8B31 /* HomeView.swift */; };
+		3FDCDDD629F85D9B00036C0E /* ChatBotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCDDD529F85D9B00036C0E /* ChatBotView.swift */; };
+		3FFA631F29F82EC300D51B78 /* DocumentSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA631E29F82EC200D51B78 /* DocumentSampleData.swift */; };
 		FFA2AC7729F847CC00F83126 /* Foro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA2AC7629F847CB00F83126 /* Foro.swift */; };
 		FFA2AC7929F8546000F83126 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FFA2AC7829F8546000F83126 /* GoogleService-Info.plist */; };
 		FFACCF3329F747DD00ADA0B2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFACCF3229F747DD00ADA0B2 /* Login.swift */; };
@@ -38,6 +44,7 @@
 		FFC82A7B29F84542006D36AA /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FFC82A7A29F84542006D36AA /* FirebaseRemoteConfigSwift */; };
 		FFC82A7D29F84542006D36AA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = FFC82A7C29F84542006D36AA /* FirebaseStorage */; };
 		FFC82A7F29F84542006D36AA /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = FFC82A7E29F84542006D36AA /* FirebaseStorageCombine-Community */; };
+
 		FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63129F70ED000C641A7 /* hackathonApp.swift */; };
 		FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63329F70ED000C641A7 /* ContentView.swift */; };
 		FFF2B63629F70ED100C641A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2B63529F70ED100C641A7 /* Assets.xcassets */; };
@@ -48,6 +55,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
+		3F970CBE29F851360006FD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNavBar.swift; sourceTree = "<group>"; };
+		3FA281D029F73FB2008B8B31 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
+		3FA281D229F73FD3008B8B31 /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
+		3FA281D429F73FE6008B8B31 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3FDCDDD529F85D9B00036C0E /* ChatBotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotView.swift; sourceTree = "<group>"; };
+		3FFA631E29F82EC200D51B78 /* DocumentSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSampleData.swift; sourceTree = "<group>"; };
 		FFA2AC7629F847CB00F83126 /* Foro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foro.swift; sourceTree = "<group>"; };
 		FFA2AC7829F8546000F83126 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FFACCF3229F747DD00ADA0B2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
@@ -119,16 +134,25 @@
 		FFF2B63029F70ED000C641A7 /* hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				3F970CBE29F851360006FD32 /* Info.plist */,
+				3FDCDDD529F85D9B00036C0E /* ChatBotView.swift */,
+				FFF2B64429F724F700C641A7 /* OpenAIResponseHandler.swift */,
+				3FA281D429F73FE6008B8B31 /* HomeView.swift */,
+				3FA281D229F73FD3008B8B31 /* ForumView.swift */,
+				3FA281D029F73FB2008B8B31 /* DocumentsView.swift */,
+				3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */,
 				FFF2B63129F70ED000C641A7 /* hackathonApp.swift */,
 				FFF2B63329F70ED000C641A7 /* ContentView.swift */,
 				FFF2B63529F70ED100C641A7 /* Assets.xcassets */,
 				FFA2AC7829F8546000F83126 /* GoogleService-Info.plist */,
 				FFF2B63729F70ED100C641A7 /* Preview Content */,
 				FFF2B64229F7241700C641A7 /* OpenAIConnector.swift */,
+
 				FFF2B64429F724F700C641A7 /* OpenAIResponseHandler.swift */,
 				FFACCF3229F747DD00ADA0B2 /* Login.swift */,
 				FFC82A4729F84128006D36AA /* AuthConnector.swift */,
 				FFA2AC7629F847CB00F83126 /* Foro.swift */,
+
 			);
 			path = hackathon;
 			sourceTree = "<group>";
@@ -137,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF2B63829F70ED100C641A7 /* Preview Assets.xcassets */,
+				3FFA631E29F82EC200D51B78 /* DocumentSampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -246,11 +271,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */,
 				FFF2B64329F7241700C641A7 /* OpenAIConnector.swift in Sources */,
+				3FFA631F29F82EC300D51B78 /* DocumentSampleData.swift in Sources */,
+				3FA281D129F73FB2008B8B31 /* DocumentsView.swift in Sources */,
 				FFACCF3329F747DD00ADA0B2 /* Login.swift in Sources */,
 				FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */,
 				FFC82A4829F84128006D36AA /* AuthConnector.swift in Sources */,
 				FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */,
+				3FDCDDD629F85D9B00036C0E /* ChatBotView.swift in Sources */,
+				3FA281D529F73FE6008B8B31 /* HomeView.swift in Sources */,
+				3FA281D329F73FD3008B8B31 /* ForumView.swift in Sources */,
 				FFF2B64529F724F700C641A7 /* OpenAIResponseHandler.swift in Sources */,
 				FFA2AC7729F847CC00F83126 /* Foro.swift in Sources */,
 			);
@@ -383,6 +414,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hackathon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -411,6 +443,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hackathon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

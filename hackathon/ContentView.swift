@@ -1,32 +1,37 @@
-import SwiftUI
+mport SwiftUI
 
 
 
 struct ContentView: View {
+    @State private var selection: Tab = .inicio
+    var authToken:String = "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"
     
-    @State private var prompt_f:String = ""
+    @State private var search:String = ""
     let openAI = OpenAIConnector()
     
-    private func performOpenAISearch(prompt_f:String) async {
-       await  openAI.processPrompt(prompt_f: prompt_f)
-       
+    private func performOpenAISearch() async {
+        
+        openAI.processPrompt(prompt: "Hola! ¿sabes sobre la constitucion mexicana?")
         
     }
     
     var body: some View {
-        NavigationView{
-            VStack{
-                TextField("Escribe", text: $prompt_f)
-                    .onSubmit {
-                        if !prompt_f.isEmpty{
-                            Task {
-                            await performOpenAISearch(prompt_f: prompt_f)
-
-                            }
-                        }
-                    }
-            }.navigationTitle("INTERCENTIS")
-        }
+        TabView {
+            HomeView()
+                .tabItem({ Image(systemName: "house") })
+                .frame(maxWidth: .infinity)
+            DocumentsView()
+                .tabItem({ Image(systemName: "menucard" )})
+                .frame(maxWidth: .infinity)
+            ChatBotView()
+                .tabItem({ Image("Chat") })
+            ForumView()
+                .tabItem({
+                    Image(systemName: "menucard")
+                })
+                .frame(maxWidth: .infinity)
+        }.background(Color.blue)
+        
     }
 }
 
