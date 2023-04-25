@@ -11,6 +11,8 @@
 		3FA281D129F73FB2008B8B31 /* DocumentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D029F73FB2008B8B31 /* DocumentsView.swift */; };
 		3FA281D329F73FD3008B8B31 /* ForumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D229F73FD3008B8B31 /* ForumView.swift */; };
 		3FA281D529F73FE6008B8B31 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA281D429F73FE6008B8B31 /* HomeView.swift */; };
+		3FDCDDD629F85D9B00036C0E /* ChatBotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCDDD529F85D9B00036C0E /* ChatBotView.swift */; };
+		3FFA631F29F82EC300D51B78 /* DocumentSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFA631E29F82EC200D51B78 /* DocumentSampleData.swift */; };
 		FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63129F70ED000C641A7 /* hackathonApp.swift */; };
 		FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF2B63329F70ED000C641A7 /* ContentView.swift */; };
 		FFF2B63629F70ED100C641A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFF2B63529F70ED100C641A7 /* Assets.xcassets */; };
@@ -21,10 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F970CBE29F851360006FD32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3FA281CE29F739E7008B8B31 /* ButtonNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNavBar.swift; sourceTree = "<group>"; };
 		3FA281D029F73FB2008B8B31 /* DocumentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsView.swift; sourceTree = "<group>"; };
 		3FA281D229F73FD3008B8B31 /* ForumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumView.swift; sourceTree = "<group>"; };
 		3FA281D429F73FE6008B8B31 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3FDCDDD529F85D9B00036C0E /* ChatBotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotView.swift; sourceTree = "<group>"; };
+		3FFA631E29F82EC200D51B78 /* DocumentSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentSampleData.swift; sourceTree = "<group>"; };
 		FFF2B62E29F70ED000C641A7 /* hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF2B63129F70ED000C641A7 /* hackathonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackathonApp.swift; sourceTree = "<group>"; };
 		FFF2B63329F70ED000C641A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +70,9 @@
 		FFF2B63029F70ED000C641A7 /* hackathon */ = {
 			isa = PBXGroup;
 			children = (
+				3F970CBE29F851360006FD32 /* Info.plist */,
+				3FDCDDD529F85D9B00036C0E /* ChatBotView.swift */,
+				FFF2B64429F724F700C641A7 /* OpenAIResponseHandler.swift */,
 				3FA281D429F73FE6008B8B31 /* HomeView.swift */,
 				3FA281D229F73FD3008B8B31 /* ForumView.swift */,
 				3FA281D029F73FB2008B8B31 /* DocumentsView.swift */,
@@ -74,7 +82,6 @@
 				FFF2B63529F70ED100C641A7 /* Assets.xcassets */,
 				FFF2B63729F70ED100C641A7 /* Preview Content */,
 				FFF2B64229F7241700C641A7 /* OpenAIConnector.swift */,
-				FFF2B64429F724F700C641A7 /* OpenAIResponseHandler.swift */,
 			);
 			path = hackathon;
 			sourceTree = "<group>";
@@ -83,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				FFF2B63829F70ED100C641A7 /* Preview Assets.xcassets */,
+				3FFA631E29F82EC200D51B78 /* DocumentSampleData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -165,9 +173,11 @@
 			files = (
 				3FA281CF29F739E7008B8B31 /* ButtonNavBar.swift in Sources */,
 				FFF2B64329F7241700C641A7 /* OpenAIConnector.swift in Sources */,
+				3FFA631F29F82EC300D51B78 /* DocumentSampleData.swift in Sources */,
 				FFF2B63429F70ED000C641A7 /* ContentView.swift in Sources */,
 				3FA281D129F73FB2008B8B31 /* DocumentsView.swift in Sources */,
 				FFF2B63229F70ED000C641A7 /* hackathonApp.swift in Sources */,
+				3FDCDDD629F85D9B00036C0E /* ChatBotView.swift in Sources */,
 				3FA281D529F73FE6008B8B31 /* HomeView.swift in Sources */,
 				3FA281D329F73FD3008B8B31 /* ForumView.swift in Sources */,
 				FFF2B64529F724F700C641A7 /* OpenAIResponseHandler.swift in Sources */,
@@ -301,6 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hackathon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -329,6 +340,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"hackathon/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hackathon/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

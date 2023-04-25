@@ -3,6 +3,7 @@ import SwiftUI
 
 
 struct ContentView: View {
+    @State private var selection: Tab = .inicio
     var authToken:String = "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"
     
     @State private var search:String = ""
@@ -15,19 +16,35 @@ struct ContentView: View {
     }
     
     var body: some View {
-        NavigationView{
-            VStack{
-                TextField("Escribe", text: $search)
-                    .onSubmit {
-                        if !search.isEmpty{
-                            Task {
-                                await performOpenAISearch()
+        TabView {
+            HomeView()
+                .tabItem({ Image(systemName: "house") })
+                .frame(maxWidth: .infinity)
+            DocumentsView()
+                .tabItem({ Image(systemName: "menucard" )})
+                .frame(maxWidth: .infinity)
+            ChatBotView()
+                .tabItem({ Image("Chat") })
+            ForumView()
+                .tabItem({
+                    Image(systemName: "menucard")
+                })
+                .frame(maxWidth: .infinity)
+        }.background(Color.blue)
+        //NavigationView{
+            //VStack{
+               // TextField("Escribe", text: $search)
+                 //   .onSubmit {
+                   //     if !search.isEmpty{
+                     //       Task {
+                       //         await performOpenAISearch()
 
-                            }
-                        }
-                    }
-            }.navigationTitle("INTERCENTIS")
-        }
+                         //   }
+                        //}
+                    ///}
+            //}.navigationTitle("INTERCENTIS")
+        //
+    //}.tabItem({ Image("Chat") })
     }
 }
 
