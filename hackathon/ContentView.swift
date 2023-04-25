@@ -1,4 +1,4 @@
-import SwiftUI
+mport SwiftUI
 
 
 
@@ -31,20 +31,7 @@ struct ContentView: View {
                 })
                 .frame(maxWidth: .infinity)
         }.background(Color.blue)
-        //NavigationView{
-            //VStack{
-               // TextField("Escribe", text: $search)
-                 //   .onSubmit {
-                   //     if !search.isEmpty{
-                     //       Task {
-                       //         await performOpenAISearch()
-
-                         //   }
-                        //}
-                    ///}
-            //}.navigationTitle("INTERCENTIS")
-        //
-    //}.tabItem({ Image("Chat") })
+        
     }
 }
 

@@ -1,11 +1,9 @@
 import Foundation
 
-public class OpenAIConnector {
+public class AuthConnector {
 
-    let openAIURL = URL(string: "https://api.openai.com/v1/chat/completions")
-    var openAIKey: String {
-        return "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"
-    }
+    let openAIURL = URL(string: "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCco8UGMQiohVwiNATlO4P8-1sXlPTQync")
+   
     
     /// DO NOT EVER TOUCH THIS FUNCTION. EVER.
     private func executeRequest(request: URLRequest, withSessionConfig sessionConfig: URLSessionConfiguration?) -> Data? {
@@ -37,16 +35,14 @@ public class OpenAIConnector {
         return requestData
     }
     
-    public func processPrompt(prompt_f: String) -> Optional<String> {
+    public func processPrompt(name: String) -> Optional<String> {
         /// cURL stuff.
         var request = URLRequest(url: self.openAIURL!)
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer \(self.openAIKey)", forHTTPHeaderField: "Authorization")
-        var complete_prompt:String = "Actua como un abogado experto en la contitución Méxicana, especialmente haciendo enfasis en las leyes de la ciudad de México. Por favor, asesorame " + prompt_f
+
         
-        let httpBody: Dictionary <String, Any> = [ "model": "gpt-3.5-turbo",
-                                                      "messages": [["role": "user", "content":complete_prompt]]]
+        let httpBody: Dictionary <String, Any> = ["email":"franck5516@gmail.com","password":"hola55","returnSecureToken":true]
         
         var httpBodyJson: Data
         
