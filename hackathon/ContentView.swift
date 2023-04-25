@@ -8,7 +8,7 @@ struct ContentView: View {
     let openAI = OpenAIConnector()
     
     private func performOpenAISearch(prompt_f:String) async {
-        openAI.processPrompt(prompt_f: prompt_f)
+       await  openAI.processPrompt(prompt_f: prompt_f)
        
         
     }
